@@ -1,0 +1,50 @@
+<!-- WebGL Colour Chooser Widget
+Dr Anton Gerdelan, Trinity College Dublin, Ireland.
+First Version 22 Apr 2014 -->
+<html>
+<head>
+<title>webgl colour chooser</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38287357-1']);
+  _gaq.push(['_setDomainName', 'antongerdelan.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body style="font-family: Courier, monospace">
+<table><tr>
+<td>
+<canvas id="canvas" width=256 height=256></canvas>
+</td>
+<td style="padding-left:20px;">
+<h2>Colour Values</h2>
+<h3>HSV</h3>
+<p id="pcolc">0, 0, 0</p>
+<h3>RGB 0-255 byte and in hex</h3>
+<p id="pcola">0, 0, 0</p>
+<p id="phex">#000000</p>
+<h3>RGB 0.0-1.0 float (3 s.f.)</h3>
+<p id="pcolb">0.0, 0.0, 0.0</p>
+<p>
+gamma: <input type="text" id="gammabox" size="4" value=1.0>
+</p>
+</td>
+</tr></table>
+<p>
+A copy of GIMP's colour chooser that also gives the RGB value in floats -<br />
+as used in shader programmes. Coded in WebGL by Anton Gerdelan, 22 April 2014.
+</p>
+</body>
+<script src="webgl-utils.js"></script>
+<script src="webgl-debug.js"></script>
+<script src="colour_widget.js"></script>
+<script src="main.js"></script>
+</html>
