@@ -8,3 +8,6 @@ Gives values in formats:
 * RGB 0.0-1.0 float (for OpenGL etc.)
 
 Allows you to add gamma value to preview colour with colour correction.
+
+Online version: <a href="http://antongerdelan.net/colour/">http://antongerdelan.net/colour/</a>
+
